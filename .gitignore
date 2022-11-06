@@ -1,0 +1,5 @@
+.env
+certbot/*
+!certbot/.gitkeep
+www/*
+!www/.gitkeep
