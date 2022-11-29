@@ -11,11 +11,15 @@ services:
       - "443:443"
     restart: always
     links:
-      - dunamis
-      - demo-selector
+      - dunamis_1
+      - dunamis_2
+      - demo-selector_1
+      - demo-selector_2
     depends_on:
-      - dunamis
-      - demo-selector
+      - dunamis_1
+      - dunamis_2
+      - demo-selector_1
+      - demo-selector_2
     volumes:
      - ./www:/var/www:rw
      - ./certbot:/certbot:ro
