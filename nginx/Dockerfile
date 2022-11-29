@@ -1,2 +1,2 @@
-FROM nginx:1.14.2-alpine
+FROM pagespeed/nginx-pagespeed
 ADD nginx/vhost/. /etc/nginx/conf.d/
